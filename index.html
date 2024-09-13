@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="samuel coronado">
+    <meta name="keywords" content="travel, USA">
+    <link rel="stylesheet" href="/pages/index.css">
+
+
+    <title>Travel</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Around<span class="textsmall">THE U.S</span></h1>
+            <hr>
+        </header>
+        <div class="profile">
+            <img src="/images/profile.jpg" alt="foto de perfil" class="image">
+            <div class="info">
+              <div class="chance">
+                <h2 id="person" class="person">DoKKoDo S.C.</h2>
+                <button id="edit" class="edit"></button>
+            </div>
+                <p class="caracter">-write</p>
+                <dialog id="popup" class="popup">
+                    <button id="cerrar" type="button" class="cerrar"> X </button>
+                    <h3>Editar perfil</h3>
+                    <form class="popup__form" name="registrer">
+                      <input type="text" name="name" placeholder="Nombre" id="name" required minlength="2" maxlength="40">
+                      <span class="name-error"></span>
+                      <input type="text" name="breed" placeholder="acerca de mi" id="caracteristica" required minlength="2" maxlength="200">
+                      <span class="caracteristica-error error-messenge"></span>
+                      <button id="save" type="submit" class="save" >Guardar</button>
+                    </form>
+                </dialog>
+            </div>
+            <button id="newplace" class="addbutton">+ </button>
+            <dialog id="popupplace" class="popupplace">
+                <button id="cerrarplace" type="button" class="cerrar"> X </button>
+                <h3>New Place</h3>
+                <form class="popup__form" name="placeForm">
+                  <input type="text" name="title" placeholder="Tilte" id="Title" class="place" required minlength="2" maxlength="40">
+                  <span class="Title-error"></span> <!-- Cambiado para que coincida con el id -->
+
+                  <input type="url" required name="breed" placeholder="Image URL" id="Url" class="place" >
+                  <span class="Url-error"></span> <!-- Cambiado para que coincida con el id -->
+
+                  <button id="save" type="submit" class="save">Save</button>
+                </form>
+            </dialog>
+        </div>
+
+        <div class="post"> </div>
+        <template id="template-grid">
+
+
+          <div class="grid">
+            <button class="btnbin"  id="delete-1"></button>
+            <img src="/images/kirill-pershin-.jpg" alt="Montañas calvas" id="gallery" class="galery" >
+            <div class="pieimage">
+                <h2 class="spot"></h2>
+                <button class="heart"><span class="heart-symbol">&#x2661;</span></button>
+            </div>
+        </div>
+
+        </template>
+
+        <dialog id="myModal" class="modal">
+          <div class="content-images"> <img class="modal-content" id="modalImage">
+            <button id="cerrarImg" type="button" class="close"> X </button>
+            <p class="piemodal"  id="piemodal">esto tiene que cambiar</p>
+          </div>
+            </dialog>
+
+
+
+        <p class="paragraps">©DoKKoDo</p>
+    </div>
+    <script  src="/index.js" type="module"></script>
+</body>
+</html>
