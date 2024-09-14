@@ -27,11 +27,11 @@ class Card {
     });
   }
 
-  // Method to set up event listeners (e.g., for the delete and heart buttons)
+  
   setEventListeners() {
     // Delete card functionality
     this.deleteCard.addEventListener("click", () => {
-      this.removeCard(); // Removes the card when the delete button is clicked
+      this.removeCard(); 
     });
     this.img.addEventListener('click', () => {
       this.openModal();
